@@ -13,7 +13,6 @@ http.createServer(function(req, res) {
     var responseText = 
         JSON.stringify(shareData);
     
-    
     res.writeHead(200, {'Content-Type': 'application/json'});
     res.end(responseText);    
 }).listen(port);
